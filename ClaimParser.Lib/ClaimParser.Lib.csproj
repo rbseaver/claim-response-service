@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClaimParserService.cs" />
+    <Compile Include="ClaimResponseService.cs" />
     <Compile Include="Domain\PatentClaimDomain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

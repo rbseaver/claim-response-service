@@ -35,7 +35,7 @@ namespace ClaimParser.Lib
                 model.PatentClaims.Add(new PatentClaim
                 {
                     Sequence = sequencer,
-                    ClaimText = claim
+                    ClaimText = claim.Trim()
                 });
                 sequencer++;
             }

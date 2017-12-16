@@ -22,7 +22,7 @@ namespace ClaimParser.Tests.Unit
         }
 
         [Test]
-        public void AndParsingClaimItShouldConverToDomainObject()
+        public void AndParsingClaimItShouldConvertToDomainObject()
         {
             var service = new ClaimParserService();
             var patentClaim = service.ParseClaims(ARandom.String(100));

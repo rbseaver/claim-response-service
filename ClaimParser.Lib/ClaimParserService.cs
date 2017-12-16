@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace ClaimParser.Lib
 {
-    public class ClaimParserService
+    public class ClaimParserService : IClaimParserService
     {
         public PatentClaimDomain ParseClaims(string claimText)
         {

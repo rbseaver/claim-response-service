@@ -2,6 +2,7 @@
 using ClaimParser.Lib.Domain;
 using Fluency.DataGeneration;
 using NUnit.Framework;
+using System;
 
 namespace ClaimParser.Tests.Unit
 {
@@ -19,6 +20,13 @@ namespace ClaimParser.Tests.Unit
         {
             var service = new ClaimParserService();
             Assert.DoesNotThrow(() => service.ParseClaims(ARandom.String(100)));
+        }
+
+        [Test]
+        public void ItShouldThrowArgumentExceptionOnEmptyClaimText()
+        {
+            var service = new ClaimParserService();
+            Assert.Throws<ArgumentException>(() => service.ParseClaims(string.Empty));
         }
 
         [Test]

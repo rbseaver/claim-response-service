@@ -11,6 +11,11 @@ namespace ClaimParser.Lib
 
         public PatentClaimDomain ParseClaims(string claimText)
         {
+            if (string.IsNullOrEmpty(claimText))
+            {
+                throw new ArgumentException("Text cannot be null or empty");
+            }
+
             return new PatentClaimDomain();
         }
     }

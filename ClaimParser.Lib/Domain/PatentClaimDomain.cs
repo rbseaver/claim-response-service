@@ -4,7 +4,7 @@ namespace ClaimParser.Lib.Domain
 {
     public class PatentClaimDomain
     {
-        public IEnumerable<PatentClaim> PatentClaims { get; set; }
+        public IList<PatentClaim> PatentClaims { get; set; }
     }
 
     public class PatentClaim

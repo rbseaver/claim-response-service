@@ -4,6 +4,6 @@ namespace ClaimParser.Lib
 {
     public interface IClaimParserService
     {
-        PatentClaimDomain ParseClaims(string claimText);
+        PatentClaimCollection ParseClaims(string claimText);
     }
 }

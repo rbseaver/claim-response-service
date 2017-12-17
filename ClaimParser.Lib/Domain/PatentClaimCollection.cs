@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ClaimParser.Lib.Domain
 {
-    public class PatentClaimDomain
+    public class PatentClaimCollection
     {
         [JsonProperty("claims")]
         public IList<PatentClaim> PatentClaims { get; set; }

@@ -8,11 +8,11 @@ namespace ClaimParser.Lib
 {
     public class ClaimParserService : IClaimParserService
     {
-        public PatentClaimDomain ParseClaims(string claimText)
+        public PatentClaimCollection ParseClaims(string claimText)
         {
             CheckForEmpty(claimText);
 
-            var model = new PatentClaimDomain
+            var model = new PatentClaimCollection
             {
                 PatentClaims = new List<PatentClaim>()
             };
@@ -24,7 +24,7 @@ namespace ClaimParser.Lib
             return model;
         }
 
-        private static void AddClaimsToModel(PatentClaimDomain model, IEnumerable<string> claims)
+        private static void AddClaimsToModel(PatentClaimCollection model, IEnumerable<string> claims)
         {
             var sequencer = 1;
 

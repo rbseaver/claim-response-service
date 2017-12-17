@@ -1,5 +1,4 @@
 ﻿using ClaimParser.Lib;
-using ClaimParser.Lib.Domain;
 using Fluency.DataGeneration;
 using NUnit.Framework;
 using System;
